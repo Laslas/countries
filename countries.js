@@ -2055,12 +2055,34 @@ const countries = [
         // Creating all the inner elements
 
         const countryDiv = document.createElement('div'); //Smallest div, contains country info append to innerDivDiv
+        const caption = document.createElement('p');
+        const caption1 = document.createElement('div');
+        const popcap = document.createElement('p')
+        const popcap1 = document.createElement('div');
+        const currcap = document.createElement('p');
+        const caption2 = document.createElement('div');
+        const flagDiv = document.createElement('div');
+
 
         //Adding class to country div
         countryDiv.setAttribute('class', 'countrydiv');
+        caption1.setAttribute('class', 'capcaption')
+        caption.setAttribute('class', 'capitcap')
+        popcap1.setAttribute('class', 'popcaption');
+        popcap.setAttribute('class', 'capitcap')
+        caption2.setAttribute('class', 'curcaption')
+        currcap.setAttribute('class', 'capitcap');
+        flagDiv.setAttribute('class', 'flagdiv');
 
          // All  inner appendings
         innerDiv.appendChild(countryDiv);
+        countryDiv.appendChild(caption1);
+        caption1.appendChild(caption);
+        popcap1.appendChild(popcap);
+        countryDiv.appendChild(popcap1);
+        countryDiv.appendChild(caption2);
+        caption2.appendChild(currcap);
+        countryDiv.appendChild(flagDiv);
         
 
   
@@ -2084,18 +2106,21 @@ const countries = [
         //Appending country div elements
 
         countryDiv.appendChild(countryName);
-        countryDiv.appendChild(countryCapital);
-        countryDiv.appendChild(countryPopulation);
-        countryDiv.appendChild(countryCurrency);
-        countryDiv.appendChild(countryFlag);
+        caption1.appendChild(countryCapital);
+        popcap1.appendChild(countryPopulation);        
+        caption2.appendChild(countryCurrency);
+        flagDiv.appendChild(countryFlag);
 
 
         //Inputting info into country div
 
         countryName.textContent = name;
         countryCapital.textContent = capital;
+        caption.textContent = `Capital:`;
         countryPopulation.textContent = population;
+        popcap.textContent = `Population:`
         countryCurrency.textContent = currency;
+        currcap.textContent = `Currency:`
         countryFlag.src = flag;
     
 

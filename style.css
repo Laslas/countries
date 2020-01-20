@@ -50,29 +50,76 @@
     text-align: center;
     background: yellow;
     border-radius: 9%;
+    display: flex;
+    flex-direction: column;
 }
 
 .countrydiv * {
     
-    margin: 3px 0 1px 0;
+    margin: 2px 0 1px 0;
+}
+
+.countryname {
+    order: 0;
+}
+
+.capcaption {
+    display: flex;
+    align-self: center;
+    order: 1;
 }
 
 .countrycapital {
+    font-size: 15px;
+    margin-left: 3px;
+    color: black;
+}
+.capitcap {
+    color: blue;
+    font-style: italic;
+    
+}
+
+.popcaption {
+    display: flex;
+    align-self: center;
+    order: 1;
+}
+
+.popcap {
+    font-style: italic;
     color: blue;
 }
 
 .countrypopulation {
     font-weight: bold;
+    margin-left: 3px;
+    color: black;
+}
+
+.curcaption {
+    display: flex;
+    align-self: center;
+    order: 1;
 }
 
 .countrycurrency {
     color: blue;
     font-weight: bold;
+    margin-left: 3px;
 }
 
 .countryflag {
     border: 1px solid yellow;
+    width: 100px;
+    height: 70px;
+    border-radius: 10%;
+}
+
+.flagdiv {
+    align-self: center;
+    order: 1;
     max-width: 100px;
     max-height: 80px;
-    border-radius: 10%;
+    
 }
