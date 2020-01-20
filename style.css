@@ -56,10 +56,11 @@
 
 .countrydiv * {
     
-    margin: 2px 0 1px 0;
+    margin: 3px 0 1px 0;
 }
 
 .countryname {
+    font-size: 22px;
     order: 0;
 }
 
